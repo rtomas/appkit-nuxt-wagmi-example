@@ -1,0 +1,25 @@
+{
+  "name": "@examples/nuxt-wagmi",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@reown/appkit": "1.6.0",
+    "@reown/appkit-adapter-wagmi": "1.6.0",
+    "@tanstack/vue-query": "5.62.7",
+    "@vue/devtools-api": "^7.6.8",
+    "@wagmi/core": "^2.16.0",
+    "@wagmi/vue": "0.1.1",
+    "@walletconnect/logger": "2.1.2",
+    "nuxt": "^3.14.1592",
+    "viem": "^2.21.54",
+    "vue": "latest",
+    "vue-router": "latest"
+  }
+}
