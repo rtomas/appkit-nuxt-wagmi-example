@@ -2,6 +2,9 @@
 import { createAppKit } from '@reown/appkit/vue'
 import { mainnet, polygon, base } from '@reown/appkit/networks'
 import { wagmiAdapter, projectId, networks } from './config/wagmi'
+import { useDisconnect } from "@reown/appkit/vue";
+
+const { disconnect } = useDisconnect();
 
 const modal = createAppKit({
   adapters: [wagmiAdapter],
@@ -15,11 +18,14 @@ const modal = createAppKit({
     icons: ['https://avatars.githubusercontent.com/u/179229932?s=200&v=4']
   }
 })
+
+
 </script>
 
 <template>
    <client-only>
     <appkit-button />
     <appkit-network-button />
+    <button @click="disconnect">Disconnect</button>
    </client-only>
 </template>
